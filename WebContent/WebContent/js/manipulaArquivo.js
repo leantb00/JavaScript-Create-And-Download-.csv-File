@@ -31,8 +31,8 @@ function leCSV(evt) {
 		for ( var j = 0; j < fileLine.length; j++) {
 			strDiv += '<td>' + fileLine[j].trim() + '</td>';
 			if(j==1){
-			if (!isNaN(parseInt(fileLine[j])))
-				totalArquivoTipo1= totalArquivoTipo1 + parseInt(fileLine[j])
+			if (!isNaN(parseFloat(fileLine[j])))
+				totalArquivoTipo1= totalArquivoTipo1 + parseFloat(fileLine[j])
 			
 		}}
 		strDiv += '</tr>';
